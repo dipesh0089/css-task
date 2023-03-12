@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css">
+    <style>
+        *{box-sizing: border-box; margin: 0; padding: 0;}
+
+        .main
+        {
+            height: 500px;
+            width: 900px;
+            background: whitesmoke;
+            margin: 100px auto;
+            display: flex;
+        }
+        .left
+        {
+            height: 400px;
+            width: 350px;
+            background: chartreuse;
+            background: url(https://i.ndtvimg.com/i/2016-11/shakira_640x480_61478611913.jpg);
+            background-size: 100% 100%;
+            margin: 50px 50px;
+        }
+        .right
+        {
+            height: 500px;
+            width: 450px;
+            background: whitesmoke;
+        }
+        h1
+        {
+            margin-top: 30px;
+            font-size: 80px;
+        }
+        input
+        {
+            width: 30%;
+            border: none;
+            border-bottom: 1px solid;
+            outline: none; 
+            margin-top: 50px;
+            margin-left: 50px;
+            display: block
+            /* margin-bottom: 5px; */
+
+        }
+        textarea
+        {
+            outline: none;
+            border: 1px solid;
+            padding: 13px;
+        }
+        .form
+        {
+            height: 300px;
+            width: 450px;
+            border: 5px solid;
+            margin-top: 78px;
+            border-right: none;
+            border-bottom: none;
+        }
+        .table
+        {
+            margin-top: -150px;
+            margin-left: 250px;
+            
+        }
+        tr td
+        {
+            padding-bottom: 30px;
+            padding-right: 0px;
+            
+        }  
+        button
+        {
+            background: blue;
+            height: 40Px;
+            width: 125px;
+            border: none;
+            border-radius: 35PX;
+            /* outline: none; */
+            color: white-space: white;
+            margin-top: 10px;
+            margin-left: -200px;
+            box-shadow: 0 10px 15px blue;
+        }
+        .log
+        {
+            margin-top: -25px;
+        }
+        .fa-brands
+        {
+            margin-left: -2px;
+            margin-right: 25px;
+        }
+        
+        
+    </style>
+</head>
+<body>
+    
+    <div class="main">
+        <div class="left"></div>
+        <div class="right">
+
+            <h1>Contact us</h1>
+            <div class="form">
+              <form action="">
+                <input type="text" placeholder="full name">
+                <input type="text" placeholder="email">
+                <input type="text" placeholder="message">
+                
+              </form>
+              <div class="table">
+                  <table border="0">
+                      <tr>
+                          <td>
+                              <h2>Contect</h2>
+                              <p>hi@fashion.com</p>
+                          </td>
+                      </tr>
+                      <tr>
+                          <td>
+                              <h2>Based In</h2>
+                              <p>San Francisco,</p>
+                              <p>California</p>
+                          </td>
+                    </tr>
+                    
+                  </table>
+                  <button type="submit">SEND</button>
+                  <div class="log">
+                    <i class="fa-brands fa-facebook-f"></i>
+                    <i class="fa-brands fa-instagram"></i>
+                    <i class="fa-brands fa-twitter"></i>
+                    
+                  </div>
+
+              </div>
+            </div>
+        </div>
+
+    </div>
+</body>
+</html>
