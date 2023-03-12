@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        
+        *{box-sizing: border-box; margin: 0; padding: 0;}
+
+        .nav
+        {
+            background: rgb(41, 40, 40);
+            text-align: center;
+            line-height: 30px;
+            height: 30px;
+        }
+        .nav .menu
+        {
+            display: inline;
+            margin-left: 50px;
+            position: relative;
+            list-style-type: none;
+        }
+        .nav a
+        {
+            text-decoration: none;
+            color: rgb(231, 35, 35);
+        }
+        .nav .dropdown
+        {
+            display: none;
+            position: absolute;
+            top:150%;
+            left:-8px;
+            list-style-type: none;
+
+        }
+        .nav .menu:hover .dropdown
+        {
+            display: block;
+        }
+        .nav .dropdown .subdropdown
+        {
+            display: none;
+            position: absolute;
+            top:150px;
+            left:100px;
+            list-style-type: none;
+        }
+        .nav .menu .dropdown:hover .subdropdown
+        {
+            display: block;
+        }
+        .ad
+        {
+            background: blue;
+        }
+        .ds
+        {
+            background: skyblue;
+        }
+        li::after
+        {
+            content: "";
+            height: 5px;
+            width: 0px;
+            background: wheat;
+            position: absolute;
+            top: 24px;
+            left: -5px;
+            transition: 1s;
+            
+        }
+        li:hover::after
+        {
+            width: 130%;
+        }
+        
+    </style>
+</head>
+<body>
+    
+    <div class="nav">
+        <ul>
+            <li class="menu"><a href="">Home</a></li>
+            <li class="menu"><a href="">Fetures</a></li>
+            <li class="menu"><a href="">Portfolio</a></li>
+            
+            <li class="menu"><a href="">blog</a>
+            <ul class="dropdown">
+                <li class="ds"><a href="">Service 1</a></li>
+                <li class="ds"><a href="">Service 2</a></li>
+                <li class="ds"><a href="">Service 3</a>
+                <ul class="subdropdown">
+                    <li class="ad"><a href="">Service 1</a></li>
+                    <li class="ad"><a href="">Service 2</a></li>
+                    <li class="ad"><a href="">Service 3</a></li>
+                    <li class="ad"><a href="">Service 4</a></li>
+    
+                </ul>
+                </li>
+                <li class="ds"><a href="">Service 4</a></li>
+                <li class="ds"><a href="">Service 5</a></li>
+
+            </ul>
+            </li>
+           
+            <li class="menu"><a href="">contact</a></li>
+            
+        </ul>
+
+    </div>
+</body>
+</html>
